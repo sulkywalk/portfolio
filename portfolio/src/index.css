@@ -1,0 +1,120 @@
+
+/* ===========================
+   🌎 Global Reset & Typography
+=========================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--background-image);
+  background-repeat: repeat;
+  background-size: cover;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease, background-image 0.5s ease;
+}
+
+
+/* ===========================
+   🧭 Layout
+=========================== */
+section {
+  padding: 80px 0;
+  width: 100%;
+  margin: 0;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ===========================
+   🌗 Theme Variables
+=========================== */
+/* Light Mode (default) */
+/* 🌞 Light mode (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --card-bg: #e4e0f1;
+  --section-bg: #e2dbf4;
+  --accent-color:  #7026b9;
+   --background-image: none;
+}
+
+/* 🌙 Dark mode */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --card-bg: #1e1e1e;
+  --section-bg: #181818;
+  --accent-color: #a78bfa;
+   
+}
+/* ===========================
+   💳 Card Styling
+=========================== */
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   🌈 Link Styles
+=========================== */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   🧿 Utility
+=========================== */
+.text-center {
+  text-align: center;
+}
+/* 🌙 Dark mode page background with soft corner stars */
+[data-theme='dark'] body {
+  position: relative;
+  background-color:  #121212; /* deep night base */
+  overflow-x: hidden;
+}
+
+/* Stars effect globally */
+[data-theme='dark'] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.2) 1px, transparent 2px),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.15) 1px, transparent 2px),
+    radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 2px),
+    radial-gradient(circle at 15% 90%, rgba(255, 255, 255, 0.12) 1px, transparent 2px);
+  background-size: 180px 180px, 220px 220px, 260px 260px, 300px 300px;
+  opacity: 0.6;
+  z-index: 0;
+  filter: blur(0.3px);
+}
+
+/* Make sure all content is above the stars */
+body * {
+  position: relative;
+  z-index: 1;
+}

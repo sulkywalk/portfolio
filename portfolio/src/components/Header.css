@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  margin: 0 1rem;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* 🌙 Dark Mode Button */
+.theme-toggle {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 0.9;
+}
