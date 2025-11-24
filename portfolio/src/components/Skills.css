@@ -21,6 +21,12 @@
   margin: 0;
   list-style: none;
 }
+.skill-icon {
+  width: 60px;      /* adjust to preferred size */
+  height: 60px;     /* keeps icons uniform */
+  margin-right: 8px;
+  vertical-align: middle; /* aligns icon with text */
+}
 
 .skills-list li {
     display: inline block;

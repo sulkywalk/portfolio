@@ -16,15 +16,15 @@ const projects = [
   },
   {
     id: 2,
-    title: "Weather Dashboard",
+    title: "Weight Tracker",
     image: "/projects/weather.webp",
     description:
-      "A responsive weather app using OpenWeather API with real-time city search.",
-    tech: ["React", "API", "CSS"],
+      "A responsive weight tracking app that visualizes progress with charts.",
+    tech: ["React", "CSS", "Chart.js", "LocalStorage","mongoDB"],
     demo: "https://weather.vercel.app",
-    github: "https://github.com/anupriya/weather-app",
+    github: "https://github.com/sulkywalk/weight-tracker-",
     details:
-      "This app fetches live weather data using OpenWeather API and displays it with responsive cards. It supports location-based detection and shows icons for conditions."
+      "This app helps users log their weight over time and visualize their progress with interactive charts. Built with React and Chart.js, it stores data locally for quick access."
   },
   {
     id: 3,

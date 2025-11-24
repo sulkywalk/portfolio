@@ -57,9 +57,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Blog from './components/Blog';
+
 import Contact from './components/Contact';
-import BlogDetail from './components/BlogDetail'; 
+
 // optional, if you have project detail pages
 
 // 🏠 HomePage component (main landing sections)
@@ -77,9 +77,7 @@ function HomePage() {
         <section id="projects">
           <Projects />
         </section>
-        <section id="blog">
-          <Blog />
-        </section>
+      
         <section id="contact">
           <Contact />
         </section>
@@ -94,7 +92,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
+        
       </Routes>
     </Router>
   );
