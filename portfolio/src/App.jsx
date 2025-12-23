@@ -59,6 +59,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 // optional, if you have project detail pages
 
@@ -67,7 +69,7 @@ function HomePage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="page">
         <section id="home">
           <Hero />
         </section>
@@ -81,7 +83,12 @@ function HomePage() {
         <section id="contact">
           <Contact />
         </section>
+        <Footer />
+
+        
+
       </main>
+    
     </>
   );
 }

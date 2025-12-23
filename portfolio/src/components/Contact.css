@@ -1,53 +1,48 @@
-.contact-section {
+.contact {
   text-align: center;
-  padding: 5rem 1rem;
-  background: var(--card-bg);
-  color: var(--text-color);
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Text */
 .contact-text {
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: var(--text-color);
+  max-width: 480px;
+  margin: 12px auto 32px;
+  font-size: 0.95rem;
+  opacity: 0.75;
 }
 
-/* Social Icons Row */
+/* Social icons row */
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 24px;
 }
 
+/* Icon container */
 .social-links a {
-  font-size: 1.8rem;
-  color: var(--accent-color);
-  background: var(--bg-color);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+
+  color: white;
+  font-size: 1.2rem;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 0 25px rgba(168, 85, 247, 0.25);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Glow hover */
 .social-links a:hover {
-  background: var(--accent-color);
-  color: #fff;
   transform: translateY(-3px);
-}
-
-/* 🌙 Dark mode enhancement */
-[data-theme='dark'] .contact-section {
-  background: #1a1a1a;
-}
-
-[data-theme='dark'] .social-links a {
-  background: #121212;
-  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 40px rgba(168, 85, 247, 0.45);
 }

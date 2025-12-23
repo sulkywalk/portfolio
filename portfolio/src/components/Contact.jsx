@@ -4,7 +4,8 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact">
+      <div className="container">
       <h2>Let's Connect 🤝</h2>
       <p className="contact-text">
         I’d love to collaborate or just have a chat.  
@@ -43,6 +44,7 @@ export default function Contact() {
         >
           <FaTwitter />
         </a>
+      </div>
       </div>
     </section>
   );

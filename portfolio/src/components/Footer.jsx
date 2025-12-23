@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer style={{ textAlign: 'center', padding: '20px', marginTop: '60px', backgroundColor: '#f2f2f2' }}>
-      <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+    <footer className="footer">
+      <div className="container">
+        <p>© 2025 Anupriya. All rights reserved.</p>
+      </div>
     </footer>
   );
 }

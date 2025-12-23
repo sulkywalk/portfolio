@@ -19,20 +19,38 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
-      <nav className="nav">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
+   
+     <>
+      {/* 🌠 METEOR SHOWER (TOP LAYER) */}
+      <div className="meteor-layer">
+        <span className="meteor"></span>
+        <span className="meteor"></span>
+        <span className="meteor"></span>
+        <span className="meteor"></span>
+        <span className="meteor"></span>
+      </div>
 
-      {/* 🌗 Toggle Button */}
-      <button className="theme-toggle" onClick={toggleTheme}>
-        {theme === "light" ? "🌙 Dark" : "☀️ Light"}
-      </button>
-    </header>
+      {/* 🔝 HEADER */}
+      <header className="header">
+        <nav className="nav">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        {/* 🌗 Toggle Button */}
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+        </button>
+      </header>
+
+      {/* 📄 PAGE CONTENT */}
+      <main className="page-content">
+        {/* rest of your app */}
+      </main>
+    </>
   );
 }
 

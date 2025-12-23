@@ -5,7 +5,7 @@ import './Hero.css';
     <section className="hero-section">
 
 
-
+   <div className="container hero">
   <div className="hero-text">
     <h1 className="hero-title">Hi, I'm Anupriya</h1>
     <p className="hero-subtitle">
@@ -22,6 +22,7 @@ import './Hero.css';
       height="200"
     />
   </div>
+</div>
     </section>
     );
      }  

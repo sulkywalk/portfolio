@@ -42,7 +42,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="skills-section">
+    <section className="container">
       <h3>Skills</h3>
       <ul className="skills-list">
         {skills.map((skill) => (

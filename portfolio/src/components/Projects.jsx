@@ -4,15 +4,15 @@ import "./Projects.css";
 const projects = [
   {
     id: 1,
-    title: "Resume Builder App",
+    title: "expense-Tracker",
     image: "/projects/resume.webp",
     description:
-      "A web app that lets users create and download professional resumes dynamically.",
+      "A web app that lets users track expenses and visualize spending habits.",
     tech: ["React", "Express", "MongoDB", "TailwindCSS"],
     demo: "https://resume-app.vercel.app",
-    github: "https://github.com/anupriya/resume-builder",
+    github: "",
     details:
-      "Built with the MERN stack, this app allows users to create customized resumes in real-time using a modern UI. It includes authentication, live preview, and export to PDF."
+      "Built with the MERN stack, this app allows users to track expenses and visualize spending habits."
   },
   {
     id: 2,
@@ -44,7 +44,8 @@ const Projects = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects">
+      <div className="container">
       <h2 className="projects-title">Projects</h2>
       <p className="projects-subtitle">
         A selection of my recent work — click to see more details.
@@ -56,7 +57,7 @@ const Projects = () => {
             key={proj.id}
             className="project-card"
             onClick={() => setSelected(proj)}
-          >
+           >
             <img src={proj.image} alt={proj.title} className="project-img" />
             <div className="project-info">
               <h3>{proj.title}</h3>
@@ -69,6 +70,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
 
       {/* Modal */}
