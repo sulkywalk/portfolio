@@ -17,7 +17,7 @@ const projects = [
   {
     id: 2,
     title: "Weight Tracker",
-    image: "/projects/weather.webp",
+    image: "/projects/weight.webp",
     description:
       "A responsive weight tracking app that visualizes progress with charts.",
     tech: ["React", "CSS", "Chart.js", "LocalStorage","mongoDB"],

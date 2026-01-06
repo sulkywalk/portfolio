@@ -1,44 +1,18 @@
-// src/components/Skills.jsx
-// import React from 'react';
-// import './Skills.css';
 
-// export default function Skills() {
-//   return (
-//     <section className="skills-section">
-//       <h3>Skills</h3>
-//       <ul className="skills-list">
-//         <li>React.js</li>
-//         <li>JavaScript (ES6+)</li>
-//         <li>HTML & CSS</li>
-//         <li>Git & GitHub</li>
-//         <li>REST APIs</li>
-//       </ul>
-//     </section>
-//   );
-// }
-
-    // <section>
-    //   <h2>Skills</h2>
-    //   <ul>
-    //     <li>React.js</li>
-    //     <li>JavaScript (ES6+)</li>
-    //     <li>HTML & CSS</li>
-    //     <li>Git & GitHub</li>
-    //     <li>REST APIs</li>
-    //   </ul>
-    // </section>
-//   );
-// }
 import React from "react";
 import "./Skills.css";
 
 export default function Skills() {
   const skills = [
-    { name: "React.js", icon: "/images/react.png" },
-    { name: "JavaScript (ES6+)", icon: "/images/js.png" },
-    { name: "HTML", icon: "/public/html-5.png" },
-    { name: "CSS", icon: "/public/css-3.png" },
-    { name: "REST APIs", icon: "/images/api.png" },
+    { name: "React.js", icon: "reactjs.png" },
+    { name: "JavaScript (ES6+)", icon: "js.png" },
+    { name: "HTML", icon: "html-5.png" },
+    { name: "CSS", icon: "css-3.png" },
+    { name: "REST APIs", icon: "restapi.png" },
+    { name: "MongoDB", icon: "mongodb.png" },
+    { name: "Github", icon: "github (2).png" },
+   
+
   ];
 
   return (

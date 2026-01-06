@@ -11,15 +11,18 @@ import './Hero.css';
     <p className="hero-subtitle">
       Frontend Developer building clean & responsive web apps with React.
     </p>
-    <button className="hero-button">Download resume</button>
+    <a href="Resume(anupriya).pdf" download>
+  <button className="hero-button">Download Resume</button>
+</a>
+
   </div>
 
   <div className="hero-image">
     <img 
-      src="girlinwhite.jpg" // or import if using src folder
+      src="picture1.jpeg" // or import if using src folder
       alt="Profile"
-      width="200"
-      height="200"
+      width="300"
+      height="300"
     />
   </div>
 </div>

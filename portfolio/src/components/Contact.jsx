@@ -36,14 +36,6 @@ export default function Contact() {
         >
           <FaGithub />
         </a>
-
-        <a
-          href="https://twitter.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter />
-        </a>
       </div>
       </div>
     </section>

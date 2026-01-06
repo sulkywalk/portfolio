@@ -11,7 +11,17 @@ html {
 .container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 80px 60px;
+   /* Glass effect */
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -42,6 +52,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2.5rem;
+
 }
 
 h2 {
